@@ -1,0 +1,29 @@
+Student Record Management System File Structure Explanation
+Main Files
+index.html: Entry point of the application, contains the login/registration interface and loads necessary scripts/styles.
+README.md: Project documentation with setup instructions and usage guidelines.
+Assets Directory
+CSS Files
+main.css: Custom styles for the application interface.
+bootstrap.min.css: Bootstrap framework for responsive design and UI components.
+JavaScript Files
+app.js: Main application file that initializes the app and coordinates between components.
+Models
+Student.js: Class definition for Student objects with properties like name, ID, grades, and attendance.
+Teacher.js: Class definition for Teacher objects with properties like name, ID, and sections taught.
+Section.js: Class definition for Section objects representing classes with properties like name, teacher, and enrolled students.
+Controllers
+AuthController.js: Handles user authentication, login, and registration functionality.
+StudentController.js: Manages CRUD operations for student records and related functionalities.
+TeacherController.js: Manages CRUD operations for teacher records and section assignments.
+ReportController.js: Handles generation and display of student performance reports.
+Services
+StorageService.js: Manages localStorage operations for data persistence across the application.
+Utils
+helpers.js: Utility functions for common tasks like formatting, validation, and data manipulation.
+Pages Directory
+dashboard.html: Main overview page after login with summary statistics and navigation.
+students.html: Interface for viewing and managing student records.
+teachers.html: Interface for viewing and managing teacher records.
+sections.html: Interface for managing class sections and assignments.
+reports.html: Interface for generating and viewing student performance reports.

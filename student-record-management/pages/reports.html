@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Reports</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Student Performance Reports</h1>
+        <div id="report-section" class="mt-4">
+            <h2>Generate Report</h2>
+            <form id="report-form">
+                <div class="form-group">
+                    <label for="student-id">Student ID</label>
+                    <input type="text" class="form-control" id="student-id" placeholder="Enter Student ID" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Generate Report</button>
+            </form>
+            <div id="report-output" class="mt-4"></div>
+        </div>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/controllers/ReportController.js"></script>
+</body>
+</html>
